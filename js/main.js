@@ -1,4 +1,5 @@
 var cl = document.getElementById("changelog");
+var changelogTitle = document.getElementById("changelogTitle");
 var versions = document.getElementById("versions").getElementsByTagName("li");
 var changelog = {
 	"v1.6": {
@@ -16,6 +17,7 @@ if (getParameterByname("v") !== null && getParameterByname("v") !== "") {
 
 function changeChangelog(e) {
 	changelogText = changelog[e.id].cl;
+	changelogTitle.innerHTML = `${e.id} changes`;
 	cl.innerHTML = changelogText;
 }
 
