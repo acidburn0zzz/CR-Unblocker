@@ -1,14 +1,28 @@
+// I suck at vanilla JS
+
 var cl = document.getElementById("changelog");
 var changelogTitle = document.getElementById("changelogTitle");
 var versions = document.getElementById("versions").getElementsByTagName("li");
+var versionNode = document.getElementById("versions");
 var changelog = {
 	"v1.6": {
-		cl: "v16"
+		v: "v1.6",
+		cl: "Text about how login credential stuff works"
 	},
-	"v1.7": {
-		cl: "v17"
+}
+
+for (var key in changelog) {
+	if (changelog.hasOwnProperty(key)) {
+		li = document.createElement("LI");
+		a = document.createElement("A");
+		a.innerHTML = changelog[key].v;
+		li.id = changelog[key].v;
+		li.addEventListener("click", function() { changeChangelog(this); }, false);
+		li.appendChild(a)
+		versionNode.appendChild(li);
 	}
 }
+
 if (getParameterByname("v") !== null && getParameterByname("v") !== "") {
 	changeChangelog(document.getElementById(getParameterByname("v")));
 } else {
