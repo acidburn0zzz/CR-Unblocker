@@ -4,11 +4,12 @@ var cl = document.getElementById("changelog");
 var changelogTitle = document.getElementById("changelogTitle");
 var versions = document.getElementById("versions").getElementsByTagName("li");
 var versionNode = document.getElementById("versions");
+var active;
 var changelog = {
 	"v1.6": {
 		v: "v1.6",
 		cl: "Text about how login credential stuff works"
-	},
+	}
 }
 
 for (var key in changelog) {
@@ -30,6 +31,11 @@ if (getParameterByname("v") !== null && getParameterByname("v") !== "") {
 }
 
 function changeChangelog(e) {
+	if (active) {
+		active.childNodes[0].className -= " is-active";
+	}
+	e.childNodes[0].className += " is-active";
+	active = e;
 	changelogText = changelog[e.id].cl;
 	changelogTitle.innerHTML = `${e.id} changes`;
 	cl.innerHTML = changelogText;
