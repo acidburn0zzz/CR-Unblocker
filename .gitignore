@@ -1,8 +1,0 @@
-/node_modules
-/public
-.tern-project
-extension.zip
-extension.crx
-extension.pem
-.vscode
-*.log
