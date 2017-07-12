@@ -8,7 +8,9 @@ var active;
 var changelog = {
 	"v1.6": {
 		v: "v1.6",
-		cl: "Text about how login credential stuff works"
+		cl: "<h4>Major changes:</h4><ul><li>You can now opt-in to storing your login data to stay logged in when switching regions.</li><li>The extension's icon now opens a window to change settings and directly open Crunchyroll.</li></ul>" +
+		"<h4>Minor changes:</h4><ul><li>We now use our own servers in addition to Crunchyroll's API to get a US session ID to improve the stability of the extension.</li><li>This changelog now exists.</li><li>We've cleaned up the extension's source code for easier updates in the future.</li></ul>" +
+		"<h4>How do we store your login data?</h4><p>If you opt-in using the extension's popup window, the CR-Unblocker will get your username and password the next time you log in on Crunchyroll. Your password is immediately encrypted on supported browsers (all except Edge) using AES-256 and stored in your browser's local storage, which is only accessible to the extension itself. The next time you want to switch regions the CR-Unblocker sends your login data using HTTPS to Crunchyroll to log you in automatically and stores the authentication token returned. This token does not contain your password or username, but can still be used to log you in. Once the CR-Unblocker has obtained a token, this is sent to log you in using HTTPS to either Crunchyroll or our servers, which just forward it to Crunchyroll without storing any data about you.</p>"
 	}
 }
 
