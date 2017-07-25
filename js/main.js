@@ -15,7 +15,7 @@ var changelog = {
 	},
 	"v2.1": {
 		v: "v2.1",
-		cl: "<h4>Major changes:</h4><ul><li>Fixed a security issue that allowed users to get logged into other user's account</li><li>Extension now stops logging you in automatically after you've manually logged out on Crunchyroll</li></ul>"
+		cl: "<h4>Major changes:</h4><ul><li>Fixed a security issue logging users into wrong accounts</li><li>Extension now stops logging you in automatically after you've manually logged out from Crunchyroll</li></ul>"
 	}
 }
 
