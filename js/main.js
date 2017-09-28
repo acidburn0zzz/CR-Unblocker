@@ -16,6 +16,10 @@ var changelog = {
 	"v2.1": {
 		v: "v2.1",
 		cl: "<h4>Major changes:</h4><ul><li>Fixed a security issue logging users into wrong accounts</li><li>Extension now stops logging you in automatically after you've manually logged out from Crunchyroll</li></ul>"
+	},
+	"v2.2": {
+		v: "v2.2",
+		cl: "<h4>Major changes:</h4><ul><li>Added new settings dashboard</li></ul><h4>Minor changes:</h4><ul><li>Fixed changelog opening on browser update</li><li>Added option to not disable switching regions</li></ul>"
 	}
 }
 
