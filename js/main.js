@@ -20,6 +20,10 @@ var changelog = {
 	"v2.2": {
 		v: "v2.2",
 		cl: "<h4>Major changes:</h4><ul><li>Added new settings dashboard</li></ul><h4>Minor changes:</h4><ul><li>Fixed changelog opening on browser update</li><li>Added option to not disable switching regions</li></ul>"
+	},
+	"v2.2.1": {
+		v: "v2.2.1",
+		cl: "<h4>Minor changes:</h4><ul><li>Update cookie name to reflect recent changes on CR</li></ul>"
 	}
 }
 
